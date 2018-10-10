@@ -7,6 +7,161 @@
 	<body>
 
 		<p> Hola Mundo JS </p>
+		<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+				Click me to display Date and Time.
+		</button>
+
+		<p id="demo"></p>
+		
+		<!-- Te coge la fecha del sistema clicando en el button -->
+		
+		<br> 
+		
+		<p>-----------------------------</p>
+		
+		<br>
+		
+		<h2>Cambiar un HTML</h2>
+
+		<p id="demo_1">JS puede cambiar el contenido de un HTML</p>
+
+		<button type="button" onclick='document.getElementById("demo_1").innerHTML = "HTML cambiado by the face"'>Pinchame surmano!</button> 
+		
+		<!-- Cambia el contenido del HTML con el id que nosotros les indiquemos. 
+		La primera vez que lo ejecuté me cogió el primer id del ejemplo de arriba porque no los había cambiado, 
+		asi que parece que te va cogiendo el primer id desde arriba hasta encontrar el mismo con el nombre-->
+		
+		<br> 
+		
+		<p>-----------------------------</p>
+		
+		<br>
+		
+		<h2>Cambiar el src</h2>
+
+		<!-- JavaScript cambia los atributos del HTML src-->
+
+		<button onclick="document.getElementById('myImage').src='https://image.winudf.com/v2/image/Y28ucm9ndWVzdHVkaW9zLmJpZ3NoYXFzb3VuZGJvYXJkX2ljb25fMTUyNzQzMjkwNF8wODU/icon.png?w=170&fakeurl=1&type=.png'">First Big Shaq</button>
+
+		<img id="myImage" src="icon1.png" style="width:100px">
+
+		<button onclick="document.getElementById('myImage').src='https://image.winudf.com/v2/image/bnouaXNhYWNtZXJjZXIuYmlnc2hhcV9pY29uXzE1MzE3NTg2NDBfMDIx/icon.png?w=170&fakeurl=1&type=.png'">Second Big Shaq</button>
+		
+		<br> 
+		
+		<p>-----------------------------</p>
+		
+		<br>
+		
+		<h2>JavaScript en el body</h2>
+
+		<p id="demo2">Parrafo en el body</p>
+
+		<button type="button" onclick="myFunction()">Pincha aquí</button>
+
+		<script>
+			function myFunction() {
+    		document.getElementById("demo2").innerHTML = "Párrafo cambiado";
+			}
+		</script>
+		
+		<!-- Llamas a una función que está en el body, en este caso para cambiar un simple párrafo. -->
+		
+		<br> 
+		
+		<p>-----------------------------</p>
+		
+		<br>
+		
+		<h2>JavaScript declaraciones</h2>
+		
+		<p id="demo1"></p>
+		
+		<script>
+		var a, b, c;
+		a = 1;
+		b = 2;
+		c = a + b;
+		document.getElementById("demo1").innerHTML = c;
+		</script>
+		
+		<!-- Declaración de variables en un script -->
+		
+		<br> 
+		
+		<p>-----------------------------</p>
+		
+		<br>		
+		
+		<h2>JavaScript Expressions</h2>
+				
+		<p id="demo3"></p>
+		
+		<script>
+		document.getElementById("demo3").innerHTML = 5 * 10;
+		</script>
+				
+		<!-- Expresiones en el script -->
+		
+		<br> 
+		
+		<p>-----------------------------</p>
+		
+		<br>
+		
+		<h2>JavaScript variables</h2>
+		
+		<p id="demo4"></p>
+		
+		<script>
+		var carName = "Volvo";
+		document.getElementById("demo4").innerHTML = carName;
+		</script>
+				
+		<br> 
+		
+		<p>-----------------------------</p>
+		
+		<br>
+		
+		
+		<h2>The += Operator</h2>
+		
+		<p id="demo5"></p>
+		
+		<script>
+		var x = 10;
+		x += 5;
+		document.getElementById("demo5").innerHTML = x;
+		</script>
+		
+		<br> 
+		
+		<p>-----------------------------</p>
+		
+		<br>
+		
+		<h2>JavaScript Functions</h2>
+		
+		<p>Llama a una función y devuelve el resultado</p>
+		
+		<p id="demo6"></p>
+		
+		<script>
+		function myFunction(p1, p2) {
+		    return p1 * p2;
+		}
+		document.getElementById("demo6").innerHTML = myFunction(4, 3);
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	</body>
 
